@@ -1,5 +1,6 @@
 #pragma once
-class ContainmentBuilding
+#include "NuclearPlantElement.h"
+class ContainmentBuilding: public NuclearPlantElement
 {
 public:
 	ContainmentBuilding();

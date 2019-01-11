@@ -1,5 +1,6 @@
 #pragma once
-class ReactorPreasureVessel
+#include "NuclearPlantElement.h"
+class ReactorPreasureVessel : public NuclearPlantElement
 {
 public:
 	ReactorPreasureVessel();

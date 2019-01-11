@@ -151,9 +151,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ContainmentBuilding.h" />
+    <ClInclude Include="CoolingTower.h" />
+    <ClInclude Include="FuelAssemblies.h" />
+    <ClInclude Include="NuclearPlant.h" />
+    <ClInclude Include="NuclearPlantElement.h" />
+    <ClInclude Include="NuclearPowerPlantSimulator.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="ReactorPreasureVessel.h" />
+    <ClInclude Include="Turbine.h" />
+    <ClInclude Include="TurbineBuilding.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ContainmentBuilding.cpp" />
+    <ClCompile Include="CoolingTower.cpp" />
+    <ClCompile Include="FuelAssemblies.cpp" />
+    <ClCompile Include="NuclearPlant.cpp" />
+    <ClCompile Include="NuclearPlantElement.cpp" />
+    <ClCompile Include="NuclearPowerPlantSimulator.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -161,6 +176,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="proiLab3.cpp" />
+    <ClCompile Include="ReactorPreasureVessel.cpp" />
+    <ClCompile Include="Turbine.cpp" />
+    <ClCompile Include="TurbineBuilding.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,6 @@
 #pragma once
-class FuelAssemblies
+#include "NuclearPlantElement.h"
+class FuelAssemblies : public NuclearPlantElement
 {
 public:
 	FuelAssemblies();

@@ -1,5 +1,6 @@
 #pragma once
-class CoolingTower
+#include "NuclearPlantElement.h"
+class CoolingTower : public NuclearPlantElement
 {
 public:
 	CoolingTower();
