@@ -6,7 +6,7 @@ public:
 	Turbine();
 	~Turbine();
 
-	Turbine(int effectiveness);
+	Turbine(int effectiveness,int maxPower);
 
 	int getmaxPowerGenerating() { return maxPowerGenerating; }
 	void setmaxPowerGenerating(int power);

@@ -4,9 +4,11 @@
 
 ContainmentBuilding::ContainmentBuilding()
 {
+
 }
 
 
 ContainmentBuilding::~ContainmentBuilding()
 {
+
 }
