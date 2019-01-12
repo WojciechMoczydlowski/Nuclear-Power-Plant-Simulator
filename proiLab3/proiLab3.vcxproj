@@ -158,7 +158,7 @@
     <ClInclude Include="NuclearPlantElement.h" />
     <ClInclude Include="NuclearPowerPlantSimulator.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="ReactorPreasureVessel.h" />
+    <ClInclude Include="ReactorPressureVessel.h" />
     <ClInclude Include="Turbine.h" />
     <ClInclude Include="TurbineBuilding.h" />
   </ItemGroup>
@@ -176,7 +176,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="proiLab3.cpp" />
-    <ClCompile Include="ReactorPreasureVessel.cpp" />
+    <ClCompile Include="ReactorPressureVessel.cpp" />
     <ClCompile Include="Turbine.cpp" />
     <ClCompile Include="TurbineBuilding.cpp" />
   </ItemGroup>

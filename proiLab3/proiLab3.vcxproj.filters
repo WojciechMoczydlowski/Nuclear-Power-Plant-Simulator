@@ -27,9 +27,6 @@
     <ClInclude Include="ContainmentBuilding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ReactorPreasureVessel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FuelAssemblies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -43,6 +40,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="NuclearPlantElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReactorPressureVessel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,9 +62,6 @@
     <ClCompile Include="ContainmentBuilding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ReactorPreasureVessel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FuelAssemblies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -78,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NuclearPlantElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReactorPressureVessel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
