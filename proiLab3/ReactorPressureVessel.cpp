@@ -4,6 +4,8 @@
 
 ReactorPressureVessel::ReactorPressureVessel()
 {
+	pressure = 0;
+	maxPressure = 0;
 }
 
 

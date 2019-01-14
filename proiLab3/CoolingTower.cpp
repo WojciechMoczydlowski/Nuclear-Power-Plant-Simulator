@@ -20,6 +20,7 @@ void CoolingTower::setScaleOfCooling(int scale) {
 void CoolingTower::setTemperature(int temperature) {
 	waterTemperature = temperature;
 };
+
 void CoolingTower::coolWater() {
-	if (waterTemperature -= scaleOfCooling) waterTemperature -= scaleOfCooling;
+	waterTemperature = scaleOfCooling;
 };
