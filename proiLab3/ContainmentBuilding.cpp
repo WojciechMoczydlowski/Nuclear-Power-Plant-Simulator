@@ -4,8 +4,7 @@
 
 ContainmentBuilding::ContainmentBuilding()
 {
-	temperatureOfWater = 0;
-	pressure = 0;
+	temperatureOfWater = 20;
 	power = 0;
 }
 
@@ -15,9 +14,20 @@ ContainmentBuilding::~ContainmentBuilding()
 
 }
 
-void ContainmentBuilding::generatePressure() {
+void ContainmentBuilding::turnOnMachines() {
 
-	int generatedPower = power;
+};
+
+bool ContainmentBuilding::generatePressure() {
+
+	if (temperatureOfWater > 120) return false;
+	else temperatureOfWater = 130;
+	if (!myFuelAssemblies.getTurnOn() || !myReactorPressureVessel.getTurnOn()) return false;
+	if (!myFuelAssemblies.machineWorkCorrectly() || !myReactorPressureVessel.machineWorkCorrectly()) return false;
+	if (!myFuelAssemblies.combastFuel(power)) return false;
+	if (!myReactorPressureVessel.generatePressure(power)) return false;
+	pressure = myReactorPressureVessel.getPressure();
+	return true;
 };
 
 void ContainmentBuilding::gainPower() {

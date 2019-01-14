@@ -12,6 +12,8 @@ public:
 
 	void repearMachine();
 	void breakMachine();
+
+	bool getTurnOn() { return turnOn; }
 private:
 	bool turnOn;
 	bool workCorrectly;

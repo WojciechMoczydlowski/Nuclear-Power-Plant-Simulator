@@ -6,12 +6,16 @@
 class ContainmentBuilding: public NuclearPlantElement
 {
 public:
+	FuelAssemblies myFuelAssemblies;
+	ReactorPressureVessel myReactorPressureVessel;
+
 	ContainmentBuilding();
 	~ContainmentBuilding();
 
-	void generatePressure();
+	bool generatePressure();
 	void gainPower();
 	void lessPower();
+	void turnOnMachines();
 	
 	void setPower(int powerToFill);
 	void setTemperatureOfWater(int temperatureOfWaterToFill);
@@ -22,9 +26,6 @@ public:
 	int getPressure() { return pressure; }
 
 private:
-	FuelAssemblies myFuelAssemblies;
-	ReactorPressureVessel myReactorPressureVessel;
-
 	int temperatureOfWater; 
 	int pressure; 
 	int power;

@@ -6,7 +6,7 @@ public:
 	ReactorPressureVessel();
 	~ReactorPressureVessel();
 
-	void setPressure(int pressureToFill);
+	bool generatePressure(int power);
 	void setMaxPressure(int maxPressureToFill);
 
 	int getPressure() { return pressure; }

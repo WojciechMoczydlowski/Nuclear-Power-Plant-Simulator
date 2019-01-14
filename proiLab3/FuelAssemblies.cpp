@@ -5,7 +5,7 @@
 FuelAssemblies::FuelAssemblies()
 {
 	spaceForFuel = 13000;
-	supplyOfFuel = 0;
+	supplyOfFuel = 13000;
 }
 
 
@@ -25,12 +25,11 @@ void FuelAssemblies::setSpaceOfFuel(int space) {
 	spaceForFuel = space;
 };
 
-void FuelAssemblies::setRateOfCombustion(int rate) {
-	rateOfCombustion = rate;
-};
 
-bool FuelAssemblies::combastFuel() {
-	if (supplyOfFuel > rateOfCombustion) {
+bool FuelAssemblies::combastFuel(int power) {
+
+	int rateOfCombustion = power * 100;
+	if (supplyOfFuel >= rateOfCombustion) {
 		supplyOfFuel -= rateOfCombustion;
 		return true;
 	}

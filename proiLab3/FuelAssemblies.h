@@ -8,17 +8,14 @@ public:
 
 	void setSupplyOfFuel(int fuel);
 	void setSpaceOfFuel(int space);
-	void setRateOfCombustion(int rate);
 
 	int getSupplyOfFuel() { return supplyOfFuel; }
 	int getSpaceForFuel() { return spaceForFuel; }
-	int getRateOfCombustion() { return rateOfCombustion; }
 
-	bool combastFuel();
+	bool combastFuel(int power);
 
 private:
 	int spaceForFuel;
 	int supplyOfFuel;
-	int rateOfCombustion;
 };
 

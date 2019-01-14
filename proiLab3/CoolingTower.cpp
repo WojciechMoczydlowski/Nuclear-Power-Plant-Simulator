@@ -4,7 +4,7 @@
 
 CoolingTower::CoolingTower()
 {
-	scaleOfCooling = 0;
+	scaleOfCooling = 20;
 	waterTemperature = 20;
 }
 
