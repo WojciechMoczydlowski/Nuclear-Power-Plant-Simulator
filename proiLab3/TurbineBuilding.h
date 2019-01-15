@@ -12,9 +12,7 @@ public:
 	Turbine thirdTurbine = Turbine(10, 142331);
 	Turbine fourthTurbine = Turbine(27, 221998);
 
-	void setSteamPower(int steam);
-
-	void calculateGeneratingPower();
+	int calculateGeneratingPower(int steamPower);
 
 	void turnOnAllTurbines();
 	void turnOffAllTurbines();
@@ -24,7 +22,5 @@ public:
 
 private:
 	int maxPower;
-	int generatingPower;
-	int steamPower;
 };
 

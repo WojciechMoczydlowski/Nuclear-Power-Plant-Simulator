@@ -31,3 +31,24 @@ bool NuclearPlant::everythingWorkCorreclty() {
 	bool correctlyWorkOfSubElements = myContainmentBuilding.allMachinesWorkCorrectly() && myTurbineBuilding.allTurbinesWorkCorrectly();
 	return correctlyWorkOfMainBuilding && correctlyWorkOfSubElements;
 };
+
+
+int NuclearPlant::generateEnergy(int power) {
+	
+	turnOnAllMachines();
+	
+	if (!everythingWorkCorreclty()) return 0;
+
+	myContainmentBuilding.setPower(power);
+
+
+	if (!myContainmentBuilding.generatePressure()) return 0;
+	
+	int pressure = myContainmentBuilding.getPressure();
+
+	myContainmentBuilding.setTemperatureOfWater(myCoolingTower.coolWater());
+	
+	int energy = myTurbineBuilding.calculateGeneratingPower(pressure);
+
+	return energy;
+};

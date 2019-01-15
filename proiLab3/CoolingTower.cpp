@@ -5,7 +5,6 @@
 CoolingTower::CoolingTower()
 {
 	scaleOfCooling = 20;
-	waterTemperature = 20;
 }
 
 CoolingTower::~CoolingTower()
@@ -17,10 +16,6 @@ void CoolingTower::setScaleOfCooling(int scale) {
 	scaleOfCooling = scale;
 };
 
-void CoolingTower::setTemperature(int temperature) {
-	waterTemperature = temperature;
-};
-
-void CoolingTower::coolWater() {
-	waterTemperature = scaleOfCooling;
+int CoolingTower::coolWater() {
+	return scaleOfCooling;
 };

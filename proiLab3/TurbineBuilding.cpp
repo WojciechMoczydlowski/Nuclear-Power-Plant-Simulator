@@ -6,21 +6,13 @@
 TurbineBuilding::TurbineBuilding()
 {
 	maxPower = 1000000;
-	generatingPower = 0;
-    steamPower = 0;
 }
 
 
 TurbineBuilding::~TurbineBuilding()
 {
 }
-
-void TurbineBuilding::setSteamPower(int steam) {
-
-	steamPower = steam;
-};
-
-void TurbineBuilding::calculateGeneratingPower() {
+int TurbineBuilding::calculateGeneratingPower(int steamPower) {
 
 	int power = 0;
 	power += firstTurbine.generatePower(steamPower / 4);
@@ -28,8 +20,8 @@ void TurbineBuilding::calculateGeneratingPower() {
 	power += thirdTurbine.generatePower(steamPower / 4);
 	power += fourthTurbine.generatePower(steamPower / 4);
 
-	if (power > maxPower) generatingPower = -1;
-	else generatingPower = power;
+	if (power > maxPower) return 0;
+	else return power;
 };
 
 void TurbineBuilding::turnOnAllTurbines() {
@@ -49,5 +41,5 @@ void TurbineBuilding::turnOffAllTurbines() {
 
 
 bool TurbineBuilding::allTurbinesWorkCorrectly() {
-	return firstTurbine.machineWorkCorrectly() && secondTurbine.machineWorkCorrectly() && thirdTurbine.machineWorkCorrectly && fourthTurbine.machineWorkCorrectly();
+	return  (firstTurbine.machineWorkCorrectly() && secondTurbine.machineWorkCorrectly() && thirdTurbine.machineWorkCorrectly() && fourthTurbine.machineWorkCorrectly());
 };

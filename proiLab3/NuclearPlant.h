@@ -14,6 +14,6 @@ public:
 	
 	void turnOnAllMachines();
 	bool everythingWorkCorreclty();
-
+	int generateEnergy(int power);
 };
 

@@ -8,10 +8,8 @@ public:
 	void setScaleOfCooling(int scale);
 	int getScaleOfCooling() { return scaleOfCooling; }
 
-	void setTemperature(int temperature);
-	void coolWater();
+	int coolWater();
 private:
 	int scaleOfCooling;
-	int waterTemperature;
 };
 
