@@ -18,6 +18,7 @@ private:
 	int power;
 
 	void changePower();
+	void showAllParameters();
 	void settingsOfContainmentBuilding();
 	void settingsOfCoolingTower();
 	void settingsOfTurbineBuilding();

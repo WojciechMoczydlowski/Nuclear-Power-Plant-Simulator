@@ -39,6 +39,9 @@ void TurbineBuilding::turnOffAllTurbines() {
 	fourthTurbine.turnOffMachine();
 };
 
+bool TurbineBuilding::allTurbinesAreTurnOn() {
+	return  (firstTurbine.getTurnOn() && secondTurbine.getTurnOn() && thirdTurbine.getTurnOn() && fourthTurbine.getTurnOn());
+};
 
 bool TurbineBuilding::allTurbinesWorkCorrectly() {
 	return  (firstTurbine.machineWorkCorrectly() && secondTurbine.machineWorkCorrectly() && thirdTurbine.machineWorkCorrectly() && fourthTurbine.machineWorkCorrectly());

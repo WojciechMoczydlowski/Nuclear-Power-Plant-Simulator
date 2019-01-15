@@ -6,6 +6,7 @@ ContainmentBuilding::ContainmentBuilding()
 {
 	temperatureOfWater = 20;
 	power = 0;
+	pressure = 0;
 }
 
 
@@ -42,17 +43,6 @@ bool ContainmentBuilding::generatePressure() {
 	pressure = myReactorPressureVessel.getPressure();
 	return true;
 };
-
-
-
-void ContainmentBuilding::gainPower() {
-	power += 1;
-};
-void ContainmentBuilding::lessPower() {
-	if(power -= 1 >= 0 ) power -= 1; 
-};
-
-
 
 void ContainmentBuilding::setPower(int powerToFill) {
 	power = powerToFill;

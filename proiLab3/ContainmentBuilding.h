@@ -14,9 +14,6 @@ public:
 
 	bool generatePressure();
 
-	void gainPower();
-	void lessPower();
-
 	void turnOnMachines();
 	void turnOffMachines();
 

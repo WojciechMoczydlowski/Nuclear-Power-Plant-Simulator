@@ -19,6 +19,7 @@ public:
 
 	bool allTurbinesWorkCorrectly();
 
+	bool allTurbinesAreTurnOn();
 
 private:
 	int maxPower;
