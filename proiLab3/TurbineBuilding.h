@@ -16,6 +16,11 @@ public:
 
 	void calculateGeneratingPower();
 
+	void turnOnAllTurbines();
+	void turnOffAllTurbines();
+
+	bool allTurbinesWorkCorrectly();
+
 
 private:
 	int maxPower;

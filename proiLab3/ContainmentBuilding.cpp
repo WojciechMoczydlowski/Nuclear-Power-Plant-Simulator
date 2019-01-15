@@ -15,8 +15,21 @@ ContainmentBuilding::~ContainmentBuilding()
 }
 
 void ContainmentBuilding::turnOnMachines() {
-
+	myReactorPressureVessel.turnOnMachine();
+	myFuelAssemblies.turnOnMachine();
 };
+
+void ContainmentBuilding::turnOffMachines() {
+	myReactorPressureVessel.turnOffMachine();
+	myFuelAssemblies.turnOffMachine();
+};
+
+
+bool ContainmentBuilding::allMachinesWorkCorrectly() {
+
+	return myFuelAssemblies.machineWorkCorrectly() && myReactorPressureVessel.machineWorkCorrectly();
+};
+
 
 bool ContainmentBuilding::generatePressure() {
 
@@ -30,12 +43,16 @@ bool ContainmentBuilding::generatePressure() {
 	return true;
 };
 
+
+
 void ContainmentBuilding::gainPower() {
 	power += 1;
 };
 void ContainmentBuilding::lessPower() {
 	if(power -= 1 >= 0 ) power -= 1; 
 };
+
+
 
 void ContainmentBuilding::setPower(int powerToFill) {
 	power = powerToFill;

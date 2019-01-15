@@ -13,10 +13,15 @@ public:
 	~ContainmentBuilding();
 
 	bool generatePressure();
+
 	void gainPower();
 	void lessPower();
+
 	void turnOnMachines();
-	
+	void turnOffMachines();
+
+	bool allMachinesWorkCorrectly();
+
 	void setPower(int powerToFill);
 	void setTemperatureOfWater(int temperatureOfWaterToFill);
 	void setPressure(int pressureToFill);

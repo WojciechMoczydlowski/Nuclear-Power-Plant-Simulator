@@ -31,3 +31,23 @@ void TurbineBuilding::calculateGeneratingPower() {
 	if (power > maxPower) generatingPower = -1;
 	else generatingPower = power;
 };
+
+void TurbineBuilding::turnOnAllTurbines() {
+
+	firstTurbine.turnOnMachine();
+	secondTurbine.turnOnMachine();
+	thirdTurbine.turnOnMachine();
+	fourthTurbine.turnOnMachine();
+};
+void TurbineBuilding::turnOffAllTurbines() {
+
+	firstTurbine.turnOffMachine();
+	secondTurbine.turnOffMachine();
+	thirdTurbine.turnOffMachine();
+	fourthTurbine.turnOffMachine();
+};
+
+
+bool TurbineBuilding::allTurbinesWorkCorrectly() {
+	return firstTurbine.machineWorkCorrectly() && secondTurbine.machineWorkCorrectly() && thirdTurbine.machineWorkCorrectly && fourthTurbine.machineWorkCorrectly();
+};
