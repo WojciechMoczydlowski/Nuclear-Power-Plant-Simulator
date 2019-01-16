@@ -159,6 +159,7 @@
     <ClInclude Include="NuclearPowerPlantSimulator.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="ReactorPressureVessel.h" />
+    <ClInclude Include="Test.h" />
     <ClInclude Include="Turbine.h" />
     <ClInclude Include="TurbineBuilding.h" />
   </ItemGroup>
@@ -177,6 +178,7 @@
     </ClCompile>
     <ClCompile Include="proiLab3.cpp" />
     <ClCompile Include="ReactorPressureVessel.cpp" />
+    <ClCompile Include="Test.cpp" />
     <ClCompile Include="Turbine.cpp" />
     <ClCompile Include="TurbineBuilding.cpp" />
   </ItemGroup>
